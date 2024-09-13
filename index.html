@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympus Gym</title>
+    <link rel="stylesheet" href="styles/slide.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            font-family: "Anton", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0 bg-[#073b4c]">
+
+    <nav id="nav"class="bg-transparent px-5 py-2.5 sticky m-0 top-0 z-85 transition-colors duration-300">
+        <div class="flex justify-end mr-5">
+            <div class="mr-auto ml-5 mt-2.5 text-left text-[1.4em]">
+                <span class="text-orange-500">OLYMPUS <span class="text-red-500">GYM</span></span>
+            </div>
+            <a href="#home" class="text-white no-underline px-6 py-3.5 hover:bg-[#555] hover:rounded-md">Home</a>
+            <a href="#experience" class="text-white no-underline px-6 py-3.5 hover:bg-[#555] hover:rounded-md">Experience</a>
+            <a href="#services" class="text-white no-underline px-6 py-3.5 hover:bg-[#555] hover:rounded-md">Services and Booking</a>
+            <a href="#testimonials" class="text-white no-underline px-6 py-3.5 hover:bg-[#555] hover:rounded-md">Testimonials</a>
+            <a href="#contact" class="text-white no-underline px-6 py-3.5 hover:bg-[#555] hover:rounded-md">Contact</a>
+        </div>
+    </nav>
+    
+    <header id="home" style="background-image: url(imgs/gym-bg.png);" class="mb-[180px] h-[95vh] text-center bg-cover flex flex-col justify-center text-white">
+        <div class="text-left ml-20">
+            <h1 class="text-[3em] font-normal text-left ml-20 text-orange-500">OLYMPUS <span class="text-red-500">GYM</span></h1>
+            <p class="text-lg max-w-[600px] text-left mb-7 ml-20">Welcome to Olympus Gym, where strength meets community. Our state-of-the-art facilities and expert trainers are here to help you achieve your fitness goals.</p>
+            <a href="pages/booking_form.html" class="text-left ml-20 bg-[#ff5722] text-white px-5 py-2.5 no-underline rounded-md">Join Now</a>
+        </div>
+    </header>
+
+    <!--experience-->
+    <section id="experience" class="mb-[180px] pt-[45px] flex flex-col items-center p-5">
+        <div class="rounded-lg overflow-hidden shadow-lg w-[80%]  flex flex-col md:flex-row items-center">
+            <img src="imgs/personal_trainer.jpg" alt="Julian" class="w-[250px] h-[200px] -mt-[250px] pl-20 object-cover rounded-full "> 
+   
+            <div class="p-5 md:w-[60%] ml-[65px]">
+                <h2 class="text-2xl font-semibold text-orange-700 mb-4">My Experience as a Personal Trainer</h2>
+                <p class="text-white mb-4">
+                    My name is Julian Cespedes, and with over 8 years of experience in personal training, I have had the privilege of working with a diverse range of clients seeking to improve their health and achieve their fitness goals. My approach is centered on personalizing workouts to suit the specific needs of each individual, whether they aim to lose weight, build muscle, or enhance overall performance.
+                </p>
+                <p class="text-white mb-4">
+                    Throughout my career, I have developed effective and sustainable training programs, combining cardiovascular, strength, and flexibility exercises. My qualifications include certifications in resistance training, sports nutrition, and injury rehabilitation, allowing me to offer a comprehensive and balanced approach to each client.
+                </p>
+                <p class="text-white mb-4">
+                    Additionally, I have solid experience in conducting physical assessments and creating nutrition plans tailored to my clients' goals. My aim is to empower each person to reach their full potential and feel better about themselves, both physically and mentally.
+                </p>
+                <a href="#contact" class="bg-[#ff5722] text-white px-5 py-2.5 no-underline rounded-md hover:bg-[#e64a19]">Contact Me</a>
+            </div>
+        </div>
+    </section>
+
+
+    <!--services-->
+    <section id="services" class="mb-[180px] pt-[45px] p-5 bg-[#073b4c]">
+        <h2 class="text-3xl font-bold text-center text-white mb-10">Our Services</h2>
+        <div class="flex justify-around">
+            <div class="rounded-lg overflow-hidden shadow-lg w-[30%] bg-white bg-opacity-20 text-center">
+                <img src="imgs/swimmingpool.jpg" alt="Swimming Pool" class="w-full h-40 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold text-white mb-4">Swimming Pool</h2>
+                    <p class="text-white mb-5">Enjoy our state-of-the-art swimming pool for relaxation and fitness.</p>
+                    <a href="pages/booking_swimming.html" class="bg-[#ff5722] text-white px-5 py-2.5 no-underline rounded-md hover:bg-[#e64a19]">Book Now</a>
+                </div>
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-lg w-[30%] bg-white bg-opacity-20 text-center">
+                <img src="imgs/spinn_ma.jpg" alt="Spinning Machines" class="w-full h-40 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold text-white mb-4">Spinning Machines</h2>
+                    <p class="text-white mb-5">Get your heart pumping with our high-quality spinning machines.</p>
+                    <a href="pages/booking_spinning.html" class="bg-[#ff5722] text-white px-5 py-2.5 no-underline rounded-md hover:bg-[#e64a19]">Book Now</a>
+                </div>
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-lg w-[30%] bg-white bg-opacity-20 text-center">
+                <img src="imgs/gym.jpeg" alt="Gym Equipment" class="w-full h-40 object-cover">
+                <div class="p-5">
+                    <h2 class="text-xl font-semibold text-white mb-4">Gym</h2>
+                    <p class="text-white mb-5">Access a wide range of gym equipment for all your fitness needs.</p>
+                    <a href="pages/booking_gym.html" class="bg-[#ff5722] text-white px-5 py-2.5 no-underline rounded-md hover:bg-[#e64a19]">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--testimonials-->
+    <section id="testimonials" class="mb-[180px] flex flex-wrap gap-5 justify-between">
+        <h2 class="text-center text-4xl font-bold text-white mt-0 mx-auto mb-10 w-full block">What Our Members Say</h2>
+        <div class="relative flex pt-[45px] bg-gray-300 text-gray-800 border border-solid border-gray-300 rounded-md p-[15px] mx-6 my-[15px] w-[45%] shadow-sm">
+            <img class="absolute right-0 -top-5 rounded-full w-[100px] h-[100px] shadow-md" src="imgs/photo5.jpeg">
+            <p>"Olympus Gym has transformed my fitness journey! The trainers are amazing!"</p>
+            <p class="mt-8">- Tomy J.</p>
+        </div>
+        <div class="relative flex pt-[45px] bg-gray-300 text-gray-800 border border-solid border-gray-300 rounded-md p-[15px] mx-6 my-[15px] w-[45%] shadow-sm">
+            <img class="absolute right-0 -top-5 rounded-full w-[100px] h-[100px] shadow-md" src="imgs/photo3.jpeg">
+            <p>"I love the variety of classes offered. It's a great community!"</p>
+            <p class="mt-8">- Sarah J.</p>
+        </div>
+        <div class="relative flex pt-[45px] bg-gray-300 text-gray-800 border border-solid border-gray-300 rounded-md p-[15px] mx-6 my-[15px] w-[45%] shadow-sm">
+            <img class="absolute right-0 -top-5 rounded-full w-[100px] h-[100px] shadow-md" src="imgs/photo.jpeg">
+            <p>"The facilities are top-notch, and I always feel motivated to work out!"</p>
+            <p class="mt-8">- Mike T.</p>
+        </div>
+        <div class="relative flex pt-[45px] bg-gray-300 text-gray-800 border border-solid border-gray-300 rounded-md p-[15px] mx-6 my-[15px] w-[45%] shadow-sm">
+            <img class="absolute right-0 -top-5 rounded-full w-[100px] h-[100px] shadow-md" src="imgs/photo2.jpeg">
+            <p>"The facilities are top-notch, and I always feel motivated to work out!"</p>
+            <p class="mt-8">- Emily R.</p>
+        </div>
+    </section>
+
+    <section id="image-carousel" class="splide" aria-label="Beautiful Images">
+        <div class="splide__track">
+            <ul class="splide__list">
+                <li class="splide__slide">
+                    <img src="imgs/gym-bg.png" alt="">
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reiciendis non enim voluptatibus temporibus quisquam excepturi officia tempora laudantium aliquid eum.
+                        Fugit, similique expedita fuga eligendi error ipsum animi ab ratione.
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <img src="imgs/photo3.jpeg" alt="">
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reiciendis non enim voluptatibus temporibus quisquam excepturi officia tempora laudantium aliquid eum.
+                        Fugit, similique expedita fuga eligendi error ipsum animi ab ratione.
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <img src="imgs/photo3.jpeg" alt="">
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reiciendis non enim voluptatibus temporibus quisquam excepturi officia tempora laudantium aliquid eum.
+                        Fugit, similique expedita fuga eligendi error ipsum animi ab ratione.
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <img src="imgs/photo5.jpeg" alt="">
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reiciendis non enim voluptatibus temporibus quisquam excepturi officia tempora laudantium aliquid eum.
+                        Fugit, similique expedita fuga eligendi error ipsum animi ab ratione.
+                    </div>
+                </li>
+
+                <li class="splide__slide">
+                    <img src="imgs/gym3.jpeg" alt="">
+                    <div>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Reiciendis non enim voluptatibus temporibus quisquam excepturi officia tempora laudantium aliquid eum.
+                        Fugit, similique expedita fuga eligendi error ipsum animi ab ratione.
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="contact" class=" flex justify-center items-start p-10">
+
+        <div class="w-full max-w-md">
+            <h2 class="text-2xl font-bold text-center mb-6 mt-[100px] text-white">Contact me</h2>
+            <form class="flex flex-col space-y-4">
+                <div>
+                    <label for="name" class="block text-sm font-medium text-white mb-1">Name:</label>
+                    <input type="text" id="name" name="name" required class="block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+
+                <div>
+                    <label for="email" class="block text-sm font-medium text-white mb-1">Email:</label>
+                    <input type="email" id="email" name="email" required class="block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+
+                <div>
+                    <label for="message" class="block text-sm font-medium text-white mb-1">Message:</label>
+                    <textarea id="message" name="message" placeholder="Message" class="block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+                </div>
+
+                <button type="submit" class="self-start bg-green-600 text-white py-2 px-4 rounded-md shadow hover:bg-green-700">Send me</button>
+            </form>
+        </div>
+
+        <div class="description ml-10 mt-[105px] w-full max-w-md">
+            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, commodi esse natus laudantium vero repudiandae, quod corrupti praesentium fugiat cupiditate beatae sapiente impedit vitae architecto? Excepturi sunt doloremque tempora aliquid?</p>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/js/splide.min.js"></script>
+
+    <script>
+        window.addEventListener("scroll", () => {
+            const nav = document.getElementById("nav");
+            const header = document.getElementById("home");
+            const height = header.offsetHeight;
+
+            if (window.scrollY >= height) {
+                nav.classList.remove("bg-transparent");
+                nav.classList.add("bg-[#333]");
+            } else {
+                nav.classList.remove("bg-[#333]");
+                nav.classList.add("bg-transparent")
+            }
+        });
+        document.addEventListener('DOMContentLoaded', () => {
+            new Splide('#image-carousel', {
+                perPage: 2,
+                breakpoints: {
+                    640: {
+                        perPage: 1,
+                    },
+                },
+            }).mount();
+        });
+    </script>
+</body>
+
+</html>

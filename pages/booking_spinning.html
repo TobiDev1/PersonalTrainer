@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html  lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Olympus Gym</title>
+    <link rel="stylesheet" href="styles/slide.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.12/dist/css/splide.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        * {
+            font-family: "Anton", sans-serif;
+        }
+    </style>
+</head>
+
+<body class="m-0 p-0 bg-[#073b4c]">
+
+    <nav id="nav"class="bg-transparent px-5 py-2.5 sticky top-0 z-50 transition-colors duration-300">
+        <div class="flex justify-end mr-5">
+            <div class="mr-auto ml-5 mt-2.5 text-left text-[1.4em]">
+                <span class="text-orange-500">OLYMPUS <span class="text-red-500">GYM</span></span>
+            </div>
+            <a href="../index.html#home" class="text-white no-underline px-6 py-3.5 hover:bg-[#555] hover:rounded-md">Home</a>
+            <a href="../index.html#experience" class="text-white no-underline px-6 py-3.5 hover:bg-[#555] hover:rounded-md">Experience</a>
+            <a href="../index.html#services" class="text-white no-underline px-6 py-3.5 hover:bg-[#555] hover:rounded-md">Services and Booking</a>
+            <a href="../index.html#testimonials" class="text-white no-underline px-6 py-3.5 hover:bg-[#555] hover:rounded-md">Testimonials</a>
+            <a href="../index.html#contact" class="text-white no-underline px-6 py-3.5 hover:bg-[#555] hover:rounded-md">Contact</a>
+        </div>
+    </nav>
+
+    <header id="home" style="background-image: url(../imgs/gym-bg.png); " class="mb-[180px] h-[95vh] text-center bg-cover flex flex-col justify-center text-white">
+        <div class="ml-20 text-left">
+            <h1 class="text-[3em] font-normal text-left ml-20 text-orange-500">OLYMPUS <span class="text-red-500">GYM</span></h1>
+            <p class="text-lg max-w-[600px] text-left mb-7 ml-20">Welcome to Olympus Gym, where strength meets community. Our state-of-the-art facilities and expert trainers are here to help you achieve your fitness goals.</p>
+            <a href="booking_form.html" class="text-left ml-20 bg-[#ff5722] text-white px-5 py-2.5 no-underline rounded-md">Join Now</a>
+        </div>
+    </header>
+
+   
+
+
+    <section class="flex items-start justify-center p-10">
+
+        <div class="w-full max-w-md overflow-hidden shadow-lg w-[40%] bg-transparent bg-opacity-50 ">
+            <h2 class="mb-6 text-2xl font-bold text-center text-green-500">Register your class (Spinning)</h2>
+            <form class="flex flex-col space-y-4">
+                <div>
+                    <label for="name" class="block mb-1 text-sm font-medium text-white">Name:</label>
+                    <input type="text" id="name" name="name" required class="block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+
+                <div>
+                    <label for="email" class="block mb-1 text-sm font-medium text-white">Email:</label>
+                    <input type="email" id="email" name="email" required class="block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                </div>
+                
+                <div>
+                    <label for="class" class="block mb-1 text-sm font-medium text-white">Select Class:</label>
+                    <select id="class" name="class" required class="block w-full p-2 text-gray-900 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500">
+    
+                        <option value="spinning" selected>Spinning</option>
+                        <!--<option value="swimming">Swimming</option>
+                        <option value="gym">Gym</option>-->
+                    </select>
+                </div>
+
+                <div>
+                    <label for="date" class="block mb-1 text-sm font-medium text-white">Date:</label>
+                    <input type="date" id="date" class="block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" name="date" required>
+                </div>
+                
+                <div>
+                    <label for="time" class="block mb-1 text-sm font-medium text-white">Time:</label>
+                    <input type="time" id="time" class="block w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-indigo-500" name="time" required>
+                </div>
+
+
+                <button type="submit" class="self-start px-4 py-2 text-white bg-green-600 rounded-md shadow hover:bg-green-700">Register</button>
+            </form>
+        </div>
+
+    
+        <div class="ml-10 mt-[105px] w-full max-w-md ">
+            <p class="text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, commodi esse natus laudantium vero repudiandae, quod corrupti praesentium fugiat cupiditate beatae sapiente impedit vitae architecto? Excepturi sunt doloremque tempora aliquid?</p>
+        </div>
+    </section>
+
+    <section id="services" class="mb-[180px] pt-[45px] p-5 bg-[#073b4c]">
+        <h2 class="mb-10 text-3xl font-bold text-center text-white">More Services</h2>
+        <div class="flex justify-around">
+            <div class="rounded-lg overflow-hidden shadow-lg w-[30%] bg-white bg-opacity-20 text-center">
+                <img src="../imgs/swimmingpool.jpg" alt="Swimming Pool" class="object-cover w-full h-40">
+                <div class="p-5">
+                    <h2 class="mb-4 text-xl font-semibold text-white">Swimming Pool</h2>
+                    <p class="mb-5 text-white">Enjoy our state-of-the-art swimming pool for relaxation and fitness.</p>
+                    <a href="booking_swimming.html" class="bg-[#ff5722] text-white px-5 py-2.5 no-underline rounded-md hover:bg-[#e64a19]">Book Now</a>
+                </div>
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-lg w-[30%] bg-white bg-opacity-20 text-center">
+                <img src="../imgs/spinn_ma.jpg" alt="Spinning Machines" class="object-cover w-full h-40">
+                <div class="p-5">
+                    <h2 class="mb-4 text-xl font-semibold text-white">Spinning Machines</h2>
+                    <p class="mb-5 text-white">Get your heart pumping with our high-quality spinning machines.</p>
+                    <a href="booking_spinning.html" class="bg-[#ff5722] text-white px-5 py-2.5 no-underline rounded-md hover:bg-[#e64a19]">Book Now</a>
+                </div>
+            </div>
+            <div class="rounded-lg overflow-hidden shadow-lg w-[30%] bg-white bg-opacity-20 text-center">
+                <img src="../imgs/gym.jpeg" alt="Gym Equipment" class="object-cover w-full h-40">
+                <div class="p-5">
+                    <h2 class="mb-4 text-xl font-semibold text-white">Gym</h2>
+                    <p class="mb-5 text-white">Access a wide range of gym equipment for all your fitness needs.</p>
+                    <a href="booking_gym.html" class="bg-[#ff5722] text-white px-5 py-2.5 no-underline rounded-md hover:bg-[#e64a19]">Book Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        window.addEventListener("scroll", () => {
+            const nav = document.getElementById("nav");
+            const header = document.getElementById("home");
+            const height = header.offsetHeight;
+
+            if (window.scrollY >= height) {
+                nav.classList.remove("bg-transparent");
+                nav.classList.add("bg-[#333]");
+            } else {
+                nav.classList.remove("bg-[#333]");
+                nav.classList.add("bg-transparent")
+            }
+        })
+    </script>
+</body>
+
+</html>
